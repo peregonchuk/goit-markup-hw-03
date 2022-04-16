@@ -4,44 +4,51 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles.css" />
     <title>Студия</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="header">
-      <nav class="site-nav">
-        <a class="logo-black link" href="./index.html">
-          <span class="logo-accent">Web</span>Studio
-        </a>
+      <div class="header container">
+        <nav class="site-nav">
+          <a class="logo-black link" href="./index.html">
+            <span class="logo-accent">Web</span>Studio
+          </a>
+          <ul class="list">
+            <li><a class="nav-link nav-link_active link" href="./index.html">Студия</a></li>
+            <li><a class="nav-link link" href="./portfolio.html">Портфолио</a></li>
+            <li><a class="nav-link link" href="./index.html">Контакты</a></li>
+          </ul>
+        </nav>
         <ul class="list">
-          <li><a class="nav-link nav-link_active link" href="./index.html">Студия</a></li>
-          <li><a class="nav-link link" href="./portfolio.html">Портфолио</a></li>
-          <li><a class="nav-link link" href="./index.html">Контакты</a></li>
+          <li>
+            <a class="contact-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li><a class="contact-link link" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
-      </nav>
-      <ul class="list">
-        <li>
-          <a class="contact-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        </li>
-        <li><a class="contact-link link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-      </ul>
+      </div>
     </header>
     <main>
       <section class="main-screen">
+        <div class="container">
         <h1 class="main-screen__title">
-          ЭФФЕКТИВНОЕ РЕШЕНИЕ
-          <br />
-          ДЛЯ ВАШЕГО БИЗНЕСА
+          ЭФФЕКТИВНОЕ РЕШЕНИЕ ДЛЯ ВАШЕГО БИЗНЕСА
         </h1>
         <button class="main-screen__button" type="button">Заказать услугу</button>
       </section>
+      </div>
       <section class="benefits">
+        <div class="container">
         <h2 class="benefits-main-title visually-hidden">Преимущества</h2>
-        <ul class="list">
+        <ul class="list-benefits">
           <li>
             <h3 class="benefits-title">Внимание к деталям</h3>
             <p class="benefits-subtitle">
@@ -67,10 +74,12 @@
             </p>
           </li>
         </ul>
+        </div>
       </section>
       <section class="tasks">
+        <div class="container">
         <h2 class="tasks-title title">Чем мы занимаемся</h2>
-        <ul class="list">
+        <ul class="list-tasks">
           <li>
             <img src="./images/Other/layout.jpg" alt="Макет работы" width="370" />
           </li>
@@ -81,10 +90,12 @@
             <img src="./images/Other/ipad.jpg" alt="Цветная палитра" width="370" />
           </li>
         </ul>
+        </div>
       </section>
       <section class="staff">
+        <div class="container">
         <h2 class="staff-title title">Наша команда</h2>
-        <ul class="list">
+        <ul class="list-staff">
           <li>
             <img src="./images/Staff/ihor.jpg" alt="Игорь Демьяненко" width="270" />
             <h3 class="staff-name">Игорь Демьяненко</h3>
@@ -106,15 +117,17 @@
             <p class="staff-job">UI Designer</p>
           </li>
         </ul>
+        </div>
       </section>
     </main>
     <footer class="page-footer">
+      <div class="container">
       <a class="logo-white link" href="./index.html">
-        <span class="logo-accent">Web</span>Studio
+        <span class="logo-accent logo-footer">Web</span>Studio
       </a>
 
       <address>
-        <ul class="list">
+        <ul class="list-address">
           <li>
             <a
               class="text-info link"
@@ -132,6 +145,7 @@
           </li>
         </ul>
       </address>
+      </div>
     </footer>
   </body>
 </html>
