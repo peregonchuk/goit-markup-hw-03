@@ -357,6 +357,7 @@ img {
   cursor: pointer;
   background: var(--staff-bcgcolor);
   border-radius: 4px;
+  border: transparent;
 }
 
 .button-selector-type:hover,
