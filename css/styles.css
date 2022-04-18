@@ -24,6 +24,20 @@ body {
   margin: 0 auto;
 }
 
+h1,
+h2,
+h3 p {
+  margin-bottom: 10px;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0px;
+}
+
 address {
   font-style: normal;
 }
@@ -152,7 +166,6 @@ img {
 }
 
 .main-screen__button {
-  display: block;
   padding: 10px 32px;
   min-width: 200px;
   height: 50px;
@@ -208,11 +221,12 @@ img {
 
 .list-tasks {
   display: flex;
-  margin-left: -30px;
+  justify-content: space-between;
+  /* margin-left: -30px; */
 }
 .tasks-item {
-  flex-basis: calc((100% - 90px) / 3);
-  margin-left: 30px;
+  /* flex-basis: calc((100% - 90px) / 3);
+  margin-left: 30px; */
 }
 
 .tasks-title {
@@ -244,13 +258,13 @@ img {
 
 .list-staff {
   display: flex;
-  justify-content: space-around;
-  margin-left: -30px;
+  justify-content: space-between;
+  /* margin-left: -30px; */
 }
 
 .staff-item {
-  flex-basis: calc((100% - 120px) / 4);
-  margin-left: 30px;
+  /* flex-basis: calc((100% - 120px) / 4);
+  margin-left: 30px; */
 
   background-color: var(--text-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -258,8 +272,11 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
+.staff-couple {
+  padding: 30px 0px;
+}
+
 .staff-name {
-  margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -331,11 +348,15 @@ img {
 /*--------------- Portfolio------------------ */
 
 /*-------------------- MAIN------------------ */
+.button-selector {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .list-button {
   display: block;
   display: flex;
-  padding-top: 94px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   justify-content: center;
 }
 
@@ -378,19 +399,25 @@ img {
 .list-projects {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -20px;
+  padding-left: 0px;
+  list-style-type: none;
+  margin-left: -30px;
   margin-bottom: -30px;
-  margin-bottom: 94px;
+  /* margin-bottom: 94px; */
 }
 
 .list-projects .item {
   flex-basis: calc((100% - 90px) / 3);
-  margin-left: 20px;
+  margin-left: 30px;
   margin-bottom: 30px;
 
   background: #ffffff;
   border: 1px solid #eeeeee;
   box-sizing: border-box;
+}
+
+.list-projects .item:nth-last-child(3n + 1) {
+  margin-left: 0px;
 }
 
 .card {
