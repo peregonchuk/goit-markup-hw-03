@@ -35,14 +35,6 @@ p {
   margin-bottom: 0;
 }
 
-p,
-h1,
-h2,
-h3,
-h4 {
-  margin: 0px;
-}
-
 address {
   font-style: normal;
 }
@@ -404,9 +396,9 @@ img {
 .list-projects {
   display: flex;
   flex-wrap: wrap;
-  list-style-type: none;
+  /* list-style-type: none;
   margin-right: -30px;
-  margin-bottom: -30px;
+  margin-bottom: -30px; */
   /* margin-bottom: 94px; */
 }
 
@@ -415,12 +407,10 @@ img {
   flex-basis: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
-
   background: #ffffff;
-  border: 1px solid #eeeeee;
 }
 
-.list-projects .item:nth-last-child(3n) {
+.list-projects .item:nth-child(3n) {
   margin-right: 0px;
 }
 
@@ -430,6 +420,9 @@ img {
 
 .card {
   padding: 20px 24px;
+
+  border: 1px solid #eeeeee;
+  border-top: none;
 }
 
 .card-title {
